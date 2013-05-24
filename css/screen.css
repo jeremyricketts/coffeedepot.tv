@@ -1,0 +1,628 @@
+/* -------------------------------------------------------------- 
+  
+   Blueprint CSS Framework Screen Styles
+   * Version:   0.6 (21.9.2007)
+   * Website:   http://code.google.com/p/blueprintcss/
+   See Readme file in this directory for further instructions.
+   
+-------------------------------------------------------------- */
+
+@import 'lib/reset.css';
+@import 'lib/typography.css';
+@import 'lib/base.css';
+@import 'lib/forms.css';
+
+/* 
+	page bg: #fbfaf6   (tan)
+	dark borwn:  #3a301c
+	tan colored text:  #eae9d1
+	light brown footer text:  #B6AD97
+	light blue:  #3f7696
+ */
+   
+/* See the grid:
+   Uncomment the line below to see the grid and baseline. */
+   .container { 
+	/*background: url(lib/grid.png); border:1px solid red; margin:0 auto;*/ 
+	width:960px;
+	background-color:transparent;
+	background-image: url(/images/misc/stains.png);
+	background-repeat:no-repeat;
+	}
+	#stains-one {
+		background-position:right top;
+	}
+	#stains-two {
+		background-position:right -150px;
+	}
+	#stains-three {
+		background-position: 110px -690px;
+	}
+
+/*	HEADER
+-------------------------------------------------------------- */
+body {
+	background: #3a301c;
+}
+.page-header {
+	background: url(/images/misc/header_bg.gif) repeat-x center top; 
+	width:100%;
+	overflow:visible;
+}
+.page-main {
+	width:100%;
+	background: #fbfaf6 url(/images/misc/main_bg.gif) repeat-x center top;
+}
+.page-header .container { position:relative;} /* for the h1 */
+.page-bottom {
+	width:100%;
+	background: #3a301c url(/images/misc/footer_bg.gif) repeat-x center top;
+}
+
+/* TEMPORARY 
+-------------------------------------------------------------- */
+h1 {
+	background:url(/images/misc/logo.png) no-repeat left top; 
+	height:269px; width:373px;
+	text-indent:-9999px;
+	position:absolute; left:0; top:0;
+}
+
+/* MAIN NAVIGATION
+-------------------------------------------------------------- */
+ul#main-nav {
+	list-style:none;
+	list-style-position:inside;
+	padding:0;
+	margin:60px 190px 5px 0;
+	float:right;
+	width:390px;
+
+}
+ul#main-nav li {
+	margin:0 0 4px 0;
+	padding:0;
+	height:24px;
+}
+
+ul#main-nav li.nav-item-left {
+	width: 155px;
+	clear:left;
+}
+ul#main-nav li.nav-item-right {
+	width: 235px;
+}
+
+/* main navigation sprite
+----------------- */
+ul#main-nav li a:link, 
+ul#main-nav li a:visited { 
+	float:left; 
+	height:24px;
+	background-color: transparent;
+	background-image: url(/images/misc/main-menu.gif); 
+	background-repeat: no-repeat;
+	text-indent:-9999px;
+}
+ul#main-nav li#nav-home a		{ width: 71px; }
+ul#main-nav li#nav-news a		{ width: 72px; }
+ul#main-nav li#nav-contact a	{ width: 109px; }
+ul#main-nav li#nav-events a		{ width: 156px; }
+ul#main-nav li#nav-locations a	{ width: 130px; }
+ul#main-nav li#nav-catering a	{ width: 219px; }
+		ul#main-nav li#nav-home a:link, 
+		ul#main-nav li#nav-home a:visited {
+			background-position: -6px -6px;
+		}
+		ul#main-nav li#nav-home a:hover,
+		ul#main-nav li#nav-home a.selected {	
+			background-position: -6px -94px !important; /* important needed for IE6 */
+		}
+		ul#main-nav li#nav-news a:link, 
+		ul#main-nav li#nav-news a:visited {
+			background-position: -144px -6px;
+		}
+		ul#main-nav li#nav-news a:hover,
+		ul#main-nav li#nav-news a.selected {	
+			background-position: -144px -94px !important; /* important needed for IE6 */
+		}
+		ul#main-nav li#nav-contact a:link, 
+		ul#main-nav li#nav-contact a:visited {
+			background-position: -6px -32px;
+		}
+		ul#main-nav li#nav-contact a:hover,
+		ul#main-nav li#nav-contact a.selected {	
+			background-position: -6px -120px !important; /* important needed for IE6 */
+		}
+		ul#main-nav li#nav-events a:link, 
+		ul#main-nav li#nav-events a:visited {
+			background-position: -144px -32px;
+		}
+		ul#main-nav li#nav-events a:hover,
+		ul#main-nav li#nav-events a.selected {	
+			background-position: -144px -120px !important; /* important needed for IE6 */
+		}
+		ul#main-nav li#nav-locations a:link, 
+		ul#main-nav li#nav-locations a:visited {
+			background-position: -6px -58px;
+		}
+		ul#main-nav li#nav-locations a:hover,
+		ul#main-nav li#nav-locations a.selected {	
+			background-position: -6px -146px !important; /* important needed for IE6 */
+		}
+		ul#main-nav li#nav-catering a:link, 
+		ul#main-nav li#nav-catering a:visited {
+			background-position: -144px -58px;
+		}
+		ul#main-nav li#nav-catering a:hover,
+		ul#main-nav li#nav-catering a.selected {	
+			background-position: -144px -146px !important; /* important needed for IE6 */
+		}
+		
+ul#main-nav li a:active, ul#main-nav li a:focus	{ outline:0; -moz-outline:none;}
+
+/* PAGE QUOTE
+---------------------------------------------------------------- */
+blockquote.page-quote {
+	float:right;
+	width:540px;
+	padding:10px 0; margin:20px 36px 0 0;
+}
+blockquote.page-quote p {
+	margin:0; padding:0;
+	width:400px;
+}
+blockquote.page-quote p.page-quote-source  {
+	text-align:right;
+}
+.quote-style-1 {
+	/*background:red;*/
+}
+.quote-style-2 {
+	/*background:yellow;*/
+}
+.quote-style-3 {
+	/*background:aqua;*/
+}
+
+/*	HEADINGS
+-------------------------------------------------------------- */
+.content h2 {
+	width:960px;
+}
+
+/* CONTENT
+---------------------------------------------------------------- */
+.content 		{ 
+	float:right; clear:right;
+	margin:40px 0 0 0;
+	width:960px;
+}
+.content h2, .content h3 {
+	color:#3f7696;
+}
+
+
+/* FOOTER
+---------------------------------------------------------------- */
+.footer 		{ padding-top:50px; color:#b6ad97; }
+.footer-head 	{ text-transform:uppercase; color: #3f7696; font-weight:bold;}
+.footer div		{
+	width:200px;
+	padding-right:40px;
+}
+.footer dt, .footer dd {
+	clear:left;
+}
+.footer div	p, .footer div dl, .footer div ul {
+	clear:left;
+	width:100%;
+}
+.footer div ul {
+	margin:0; padding:0;
+	list-style-type:none;
+}
+.footer div ul li {
+	width:185px;
+	padding-left:15px;
+	background: url(/images/misc/bullet-brown.gif) no-repeat left .6em;
+	clear:left;
+}
+
+
+/*	HOME PAGE
+-------------------------------------------------------------- */
+#welcome-image {
+	float:left;
+	margin-left:30px;
+}
+
+/* standard columns */
+.left-half, .right-half {
+	width:470px;
+	padding-right:10px;
+	float:left;
+}
+
+.left-half {
+	/*background:aqua;*/
+}
+.right-half {
+	/*background:yellow;*/
+}
+div.page-main div.content div.right-half h3, div.page-main div.content div.left-half h3 {
+	clear:left;
+	width:100%;
+}
+div.page-main div.content div.right-half p, div.page-main div.content div.left-half p {
+	clear:left;
+	width:100%;
+}
+
+/* EVENTS
+---------------------------------------------------------------- */
+.event {
+	width:100%;
+	height:8em;
+}
+div.page-main div.events div.right-half  h3, 
+div.page-main div.events div.left-half h3 {
+	background:#3f7696;
+	color:#fff; /* put a shadow on this.  hot */
+	margin:0; padding:10px;
+	width:450px;
+	font-weight:bold;
+	float:left;
+}
+.events h3 a:link, .events h3 a:visited {
+	color:#7ea6bc;
+	font-size:17px;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+.events h3 a:hover {
+	color:#fff;
+}
+ul.event-archive-links {
+	width:930px;
+	float:right;
+	padding-right:30px;
+}
+ul.event-archive-links li {
+	float:right;
+	list-style-type:none;
+	margin-left:8px;
+}
+ul.event-archive-links li a:link, ul.event-archive-links li a:visited {
+	text-transform:uppercase; text-decoration:none;
+	color:#999;
+	padding:0 2px;
+}
+ul.event-archive-links li a:hover {
+	color:#fff;
+}
+
+/* Event content */
+.event-content {
+	width:360px;
+	padding-top:1em;
+}
+.event-content p {
+	clear:left;
+}
+.event-time {
+	clear:none !important;
+}
+.event-title {
+	text-transform:uppercase;
+}
+.event p {
+	margin:0; padding:0;
+}
+.event-related {
+	clear:left;
+	width:355px;
+}
+.event-related a {
+	margin-right:12px;
+	font-style:italic;
+}
+.event-even {
+	background:#fff;
+}
+.event-odd {
+	background:#f3f4f0;
+}
+.event-hover { 
+	background:#FFF0DB;
+}
+/* ...the event date blocks: */
+div.event-date-wrapper {
+	width:110px;
+	padding:1em 0;
+	color:#666;
+}
+div.event-date-wrapper p {
+	text-align:center; 
+	text-transform:uppercase; 
+	text-align:center; 
+	width:110px;
+	color:#999; /* cac8c5 */
+	font-weight:bold;
+}
+p.event-day 			{ font-weight:bold; letter-spacing:0;}
+p.event-day span 		{ font-weight:bold; color:red; letter-spacing:0; }
+p.event-date 			{ font-weight:bold; font-size:2em; line-height:1.1em; letter-spacing:-1px;}
+p.event-year 			{  }
+
+.event-hover p.event-day {color:#000;}
+.event-hover p.event-date,
+.event-hover p.event-year {color:#606060;}
+
+p.no-events {
+	color:#999;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+p.event-summary {
+	color:#999;
+	font-style:italic;
+}
+p.event-closed {
+	color:#999;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+/* LOCATIONS
+------------------------------------------------------------------ */
+h3.location-title {
+	width:100%;
+	margin-bottom:.1em;
+}
+div.location-address p, div.location-meta p {
+	margin-bottom:.2em;
+}
+div.location-address, div.location-meta, div.location-address a, div.location-meta a {
+	color:#b5afa2;
+	text-transform:uppercase;
+	text-decoration: none;
+	font-weight:bold;
+}
+div.location-address a:hover, div.location-meta a:hover {
+	color:#fff;
+}
+div.location-address {
+	width:240px;
+}
+div.location-meta {
+	width:230px;
+}
+
+img.location-pic-big {
+	width:470px;
+	height:150px;
+	border:0;
+	margin-bottom:10px;
+}
+a.location-pic-thumb:link, a.location-pic-thumb:visited {
+	height:68px; width:68px;
+	border:1px solid #a49d90;
+	background:#e0e1db;
+	float:left;
+	margin-right:10px;
+	margin-bottom:10px;
+	
+}
+a.location-pic-thumb:hover {
+	border:1px solid #3a301c;
+}
+.location-pic-thumb img {
+	width: 68px; height: 68px;
+}
+.location-pic-thumb-last {
+	margin-right:0 !important;
+}
+
+
+
+/* TABS (CATERING)
+------------------------------------------------------------------ */
+/* TABS functionality - calsses used by jquery ui plugin */
+@media projection, screen { /* Use class for showing/hiding tab content, so that visibility can be better controlled in different media types... */
+    .ui-tabs-hide {
+        display: none;
+    }
+}
+
+/* Hide useless elements in print layouts... */
+@media print {
+    .ui-tabs-nav {
+        display: none;
+    }
+}
+/*note: The other class used by this jQuert UI tabs module, is "ui-tabs-selected" which is used below*/
+
+/* TABS style */
+ul.tab-box-nav 				{ margin:0;padding:0; width:960px;}
+ul.tab-box-nav li 			{ float:left; width:240px; list-style-type:none;margin:0;padding:0;}
+ul.tab-box-nav li a:link,
+ul.tab-box-nav li a:visited { float:left; background:transparent; color:#3f7696; text-decoration:none; text-transform:uppercase; width:230px; font-weight:bold; padding:10px 0 5px 10px;}
+ul.tab-box-nav li a:hover 	{ background:#3a301c url(/images/misc/tab-bg.gif) no-repeat left bottom; color:#fff;}
+
+ul.tab-box-nav li.ui-tabs-selected a { background:#3a301c !important; color:#fff !important; }
+
+ul.tab-box-nav li a:active, ul.tab-box-nav li a:focus	{ outline:0; -moz-outline:none;}
+
+/* Tab content styles */
+.tab-box {
+	background:#3a301c;
+	color:#fbfaf6;
+	padding:40px;
+	width:880px;
+}
+
+.tab-box h3 {
+	color:#fff;
+	font-size:1em; line-height:1em;
+	font-weight:bold;
+	width: 100%;
+	clear:left;
+}
+.tab-box p {
+	width: 100%;
+	clear:left;
+}
+.tab-box li {
+	clear:left;
+}
+.tab-gallery {
+	width:240px;
+}
+.tab-gallery ul li 	{ 
+	float:left; 
+	margin:0 10px 10px 0;
+	width:70px;
+	clear:none;
+}
+.tab-gallery ul li a {
+	width:68px; height:68px;
+	float:left;
+	border:1px solid #999;
+}
+.tab-gallery ul li a:hover 	{ border:1px solid #000; }
+
+.tab-content {
+	width:600px;
+	margin-left:30px;
+}
+.tab-content, .tab-content h3 {
+	color:#eae9d1;
+}
+.tab-content p, .tab-content h3 {
+	clear:left;
+	width:100%;
+}
+.tab-content ul li{
+	padding-left:15px;
+	background: url(/images/misc/bullet-brown.gif) no-repeat left .6em;
+	list-style-type:none;
+	list-style-position:inside;
+}
+.tab-content-column {
+	width:290px;
+	padding-right:10px;
+}
+
+/* NEWS
+----------------------------------------------------------------- */
+.entry 					{ position:relative; margin-left:240px; width:720px; clear:both;}
+.entry-title			{ width:100%;}
+.entry-date 			{ position:absolute; top:0; left:-120px; }
+.entry-body  			{ width:470px; padding-right:10px;}
+.entry-body p img 		{ margin: .4em 1em .5em 0; }
+
+.entry-photos			{ width:240px; }
+.entry-photos p 		{ width:100%; }
+.entry-photos ul li 	{ float:left; margin:0 10px 10px 0; }
+.entry-photos ul li a {
+	width:68px; height:68px;
+	float:left;
+	border:1px solid #999;
+}
+.entry-photos ul li a:hover 	{ border:1px solid #000; }
+
+p.entry-pagination 		{ width:100%; clear:both; text-align:center; }
+
+/*	CONTACT
+-------------------------------------------------------------- */
+form#contactform {
+/*	background:yellow;*/
+	padding-bottom:30px;
+}
+form#contactform dl input {
+	width:400px;
+}
+form#contactform dl textarea {
+	width:400px; height:160px;
+}
+form#contactform dl {
+	margin:0; padding:0;
+}
+form#contactform dl dt {
+	margin:0; padding:0;
+	float:left;
+	width:100%;
+}
+form#contactform dl dd {
+	margin:0; padding:0;
+	float:left;
+	width:100%;
+}
+form#contactform dl dd input {
+	width:200px;
+}
+form#contactform dl span {
+	color:#F00;
+	font-weight:bold;
+	/*display:none;*/  /*TEMPORARY*/
+}
+form#contactform dl dt.captcha-image {
+	width:100px;
+}
+form#contactform dl dd.captcha-form {
+	width:300px;
+/*	border:1px solid red;*/
+}
+form#contactform dl dd.captcha-form input {
+/*	font-size:1em;*/
+	padding:2px; margin-left:15px;
+	width:70px;
+}
+form#contactform #go-time {
+	float:right; clear:both; margin-right:50px;
+}
+form#contactform span#error-message {padding-left:5px;}
+
+/* TOOLTIPS
+--------------------------------------------------------------------  */
+.tool-tip {
+	color: #fff;
+	width: 139px;
+	z-index: 13000;
+}
+ 
+.tool-title {
+	font-weight: bold;
+	font-size: 11px;
+	margin: 0;
+	color: #9FD4FF;
+	padding: 8px 8px 4px;
+	background: url(/images/misc/bubble.png) top left;
+}
+ 
+.tool-text {
+	font-size: 11px;
+	padding: 4px 8px 8px;
+	background: url(/images/misc/bubble.png) bottom right;
+}
+
+/*	Stains
+-------------------------------------------------------------- */
+#stains {
+	position:absolute; top:0; right:0; height:1007px; width:914px;
+	background:url(/images/misc/stains.png) no-repeat right top;
+}
+
+/*	LIGHTBOX STUFF
+-------------------------------------------------------------- */
+#lightbox *, #outerImageContainer *, #imageDataContainer * {
+	float:none;
+}
+#outerImageContainer a, #imageDataContainer a {
+	background:none;
+}
+#nextLink {
+	float:left;
+}
+
